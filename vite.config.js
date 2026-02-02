@@ -4,16 +4,9 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
     base: '/redux/',
-  plugins: [
-    tailwindcss(),
-    react({
-      babel: {
-        plugins: [['babel-plugin-react-compiler']],
-      },
-    }),
-  ],
-    build: {
-    outDir: 'docs',
-    emptyOutDir: true,
-  },
+  plugins: [ tailwindcss(),react({ babel: { plugins: [['babel-plugin-react-compiler']], }, }), ],
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  }
 })
