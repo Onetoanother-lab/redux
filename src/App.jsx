@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div>
       <h1>{count}</h1>
-      <button disabled={count >= max} onClick={() => dispatch(inc())}>+</button>
+      <button disabled={count >= max} onClick={() => dispatch(inc())}>+</button> 
       <button disabled={count <= min} onClick={() => dispatch(dec())}>-</button>
       <button disabled={count <= min} onClick={() => dispatch(res())}>res</button>
       <ToastContainer />
