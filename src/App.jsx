@@ -13,7 +13,7 @@ export default function App() {
   }
   else if (count <= min) {
     toast('limitga yetip keldiz');
-  }
+  } 
 
   return (
     <div>
